@@ -1,0 +1,43 @@
+<div class="card shadow">
+  <a href="event-detail.html?id={{id}}"><img class="card-img-top" src="{{image}}" /></a>
+  <div class="card-body">
+    <h4 class="card-title">
+      <a class="text-decoration-none" href="event-detail.html?id={{id}}">{{title}}</a>
+    </h4>
+    <p class="card-text">{{description}}</p>
+    <div class="row">
+      {{#if mine}}
+        <div class="col">
+          <button class="btn btn-danger">Delete</button>
+        </div>
+      {{/if}}
+      <div class="col-auto ms-auto">
+        <div class="text-end attend-users"><i class="fas fa-users"></i> {{numAttend}}</div>
+        {{#if attend}}
+          <div class="text-success text-end m-0 attend-button"><i class="fas fa-thumbs-up"></i> I'm going</div>
+        {{else}}
+          <div class="text-danger text-end m-0 attend-button"><i class="fas fa-thumbs-down"></i> Not going</div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted row m-0">
+    <div class="col-auto avatar pl-1 pr-1">
+      <a href="profile.html?id={{creator.id}}">
+        <img src="{{creator.avatar}}" class="rounded-circle" />
+      </a>
+    </div>
+    <div class="col">
+      <div class="name">
+        <a href="profile.html?id={{creator.id}}">
+          {{creator.name}}
+        </a>
+        <div><small class="text-muted">{{date}}</small></div>
+      </div>
+    </div>
+    <div class="col-auto text-end text-muted">
+      <div><small>{{price}}</small></div>
+      <div><small>{{distance}} km</small></div>
+    </div>
+  </div>
+</div>

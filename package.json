@@ -1,0 +1,38 @@
+{
+  "name": "final-exercise-unit-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint src/*",
+    "build": "webpack",
+    "prebuild": "npm test",
+    "start": "webpack serve --open",
+    "prestart": "npm test"
+  },
+  "author": "Arturo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.1",
+    "@types/mapbox-gl": "^2.4.2",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "ts-loader": "^9.2.6",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@mapbox/mapbox-gl-geocoder": "^4.7.4",
+    "bootstrap": "^5.1.1",
+    "handlebars": "^4.7.7",
+    "mapbox-gl": "^2.5.1",
+    "sweetalert2": "^11.1.7"
+  }
+}

@@ -1,0 +1,19 @@
+<li class="list-group-item active">Attendees to the event</li>
+{{#each users}}
+    <li class="list-group-item">
+        <a href="profile.html?id={{id}}">
+            <img
+                class="rounded-circle float-start me-3"
+                style="width: 40px;"
+                src="{{avatar}}"
+                alt=""
+            />
+        </a>
+        <div>
+            <div><a class="text-decoration-none" href="profile.html?id={{id}}">{{name}}</a></div>
+            <div>
+                <small>{{email}}</small>
+            </div>
+        </div>
+    </li>
+{{/each}}

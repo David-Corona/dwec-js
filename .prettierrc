@@ -1,0 +1,16 @@
+{
+  "tabWidth": 4,
+  "useTabs": false,
+  "singleQuote": false,
+  "printWidth": 100,
+  "arrowParens": "avoid",
+  "overrides": [
+    {
+      "files": ["**/*.html", "**/*.handlebars"],
+      "options": {
+        "printWidth": 120,
+        "tabWidth": 2
+      }
+    }
+  ]
+}
